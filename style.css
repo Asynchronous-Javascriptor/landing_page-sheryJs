@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    cursor: none;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+body , html{
+    width: 100%;
+    height: 100%;
+}
+
+#back{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+}
+
+#back img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+#top{
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    position: absolute;
+    pointer-events: none;
+}
+
+#working_area{
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+}
+
+.nav{
+    width: 100%;
+    padding: 15px 0;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left_nav{
+    display: flex;
+    align-items: center;
+}
+
+.left_nav img{
+    width: 100px;
+    margin-left: 20px;
+}
+
+.right_nav{
+    display: flex;
+    align-items: center;
+}
+
+.right_nav a ,.left_nav a{
+    margin: 20px;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 700;
+    pointer-events: all;
+
+}
+
+.right_nav a:hover ,.left_nav a:hover{
+    scale:1.4;
+    transition: ease-in-out all 0.3s;
+}
+
+.hero{
+    width: 100%;
+    height: 88%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heroleft{
+    width: 50%;
+    padding: 2vw;
+}
+
+.heroleft .text{
+    height: 6vw;
+    overflow: hidden;
+}
+
+.heroleft .text h1{
+    font-size: 7vw;
+    font-family: kajiro;
+    font-weight: 100;
+}
+
+.heroleft button{
+    padding: .6vw 2vw;
+    font-size:2.5vw;
+    font-weight: 100;
+    font-family: kajiro;
+    background-color: white;
+    border: none;
+    color: black;
+    margin-top: 4vw;
+    pointer-events: all;
+}
+
+.heroright{
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.heroright p{
+    font-size: 14px;
+    font-weight: 300;
+    text-align: right;
+}
+
+.heroright .img{
+    width:100%;
+    height:150px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-image: url(https://images.unsplash.com/photo-1563201938-8aec7c71203a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHZlcnRpY2FsfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60);
+    background-position: center;
+    background-size: cover;
+}
+
+.heroright p:nth-child(3){
+    margin-bottom: 50px;
+}
+
+.heroright p:nth-child(4){
+    margin-bottom: 20px;
+}
